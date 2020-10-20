@@ -127,11 +127,11 @@ int main()
 	Obj->AddSubObject(world->GetMeshAt(0));
 	Obj->GetLastSubObject()->AssignTransform(std::make_shared<Transform>(Transform(Vec3(1.5f, 1.0f, 5.0f), Vec4(0.0f), Vec3(1.f))));
 
-	Obj->GetLastSubObject()->AddSubObject(world->GetMeshAt(0));
+/*	Obj->GetLastSubObject()->AddSubObject(world->GetMeshAt(0));
 	Obj->GetLastSubObject()->GetLastSubObject()->AssignTransform(std::make_shared<Transform>(Transform(Vec3(0.0, 1.0, -1.0), Vec4(0.0), Vec3(1.0f))));
 	
 	Obj->GetLastSubObject()->GetLastSubObject()->AddSubObject(world->GetMeshAt(0));
-	Obj->GetLastSubObject()->GetLastSubObject()->GetLastSubObject()->AssignTransform(std::make_shared<Transform>(Transform(Vec3(0.0, 1.0, -1.0), Vec4(0.0), Vec3(1.0f))));
+	Obj->GetLastSubObject()->GetLastSubObject()->GetLastSubObject()->AssignTransform(std::make_shared<Transform>(Transform(Vec3(0.0, 1.0, -1.0), Vec4(0.0), Vec3(1.0f))));*/
 
 	Obj = world->AddObjectAndGetPtr(0);
 	Obj->GetTransform()->SetPosition(Vec3(100000.0f - 20.0f, 0.0f, 20.0f)); //cause player is falling to planet
