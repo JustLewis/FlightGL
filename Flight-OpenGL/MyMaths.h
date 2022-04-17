@@ -203,12 +203,12 @@ struct Matrix4
 			*
 			* so inverse tan of the opposite over the adjacent = theta. That's what's happening below.
 			*/
-			return atan2(Vecin.x, Vecin.y) * (ToDegrees? RadiansToDegrees : 1.0f);
+			return atan2(Vecin.y, Vecin.x) * (ToDegrees? RadiansToDegrees : 1.0f);
 		}
 
 		static Vec2 AngleToVector2(float Degrees)
 		{
-			//simple trig
+			//simple trig (unit length obvs)
 			return Vec2(cos(Degrees), sin(Degrees));
 		}
 
